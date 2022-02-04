@@ -1,0 +1,5415 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>MATH0057 – Probability and Statistics</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="image.css" /> 
+<meta name="src" content="image.tex" /> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+
+<h2 class="titleHead">MATH0057 – Probability and Statistics</h2>
+ <div class="author" ><span 
+class="cmr-12">Based on lectures by Dr Kayvan Sadeghi</span>
+<br />          <span 
+class="cmr-9">Notes taken by Robert Moye</span></div><br />
+<div class="date" ><span 
+class="cmr-12">Term 2 of 2021 – 2022</span></div>
+   </div> Probability is the quantification of uncertainty. Statistics is the interpretation of
+information under uncertainty.
+<!--l. 341--><p class="indent" >   The sections for interval until occurrence distributions are </p>
+<div class="center" 
+>
+<!--l. 341--><p class="noindent" >
+</p>
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+ 
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1" /><col 
+id="TBL-2-2" /><col 
+id="TBL-2-3" /><col 
+id="TBL-2-4" /><col 
+id="TBL-2-5" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="text-align:center; white-space:nowrap;" id="TBL-2-1-1"  
+class="td11">                                    Random variable                                                         </td><td colspan="4" style="text-align:center; white-space:nowrap;" id="TBL-2-1-2"  
+class="td11">                 <div class="multicolumn"  style="text-align:center; white-space:nowrap;">Distribution</div>
+</td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="text-align:center; white-space:nowrap;" id="TBL-2-2-1"  
+class="td11">                                                                                       </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-2-2"  
+class="td11">    Discrete      </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-2-3"  
+class="td11">      </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-2-4"  
+class="td11"> Continuous  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-2-5"  
+class="td11">      </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="text-align:center; white-space:nowrap;" id="TBL-2-3-1"  
+class="td11">
+</td></tr><tr 
+class="cline"><td></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="text-align:center; white-space:nowrap;" id="TBL-2-4-1"  
+class="td11">                                   Number of incidents                                                       </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-4-2"  
+class="td11">   Binomial     </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-4-3"  
+class="td11"> (<span 
+class="cmbx-10">??</span>)  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-4-4"  
+class="td11">   Poisson     </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-4-5"  
+class="td11"> (<span 
+class="cmbx-10">??</span>)  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="text-align:center; white-space:nowrap;" id="TBL-2-5-1"  
+class="td11"> Interval until <!--l. 341--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>1</mn><mstyle 
+class="text"><mtext  >st</mtext></mstyle></math> incident  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-5-2"  
+class="td11">   Geometric    </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-5-3"  
+class="td11"> (<span 
+class="cmbx-10">??</span>)  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-5-4"  
+class="td11"> Exponential  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-5-5"  
+class="td11"> (<span 
+class="cmbx-10">??</span>)  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="text-align:center; white-space:nowrap;" id="TBL-2-6-1"  
+class="td11"> Interval until <!--l. 341--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi><mstyle 
+class="text"><mtext  >th</mtext></mstyle></math> incident  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-6-2"  
+class="td11"> Neg. binomial  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-6-3"  
+class="td11"> (<span 
+class="cmbx-10">??</span>)  </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-6-4"  
+class="td11">   Gamma     </td><td  style="text-align:center; white-space:nowrap;" id="TBL-2-6-5"  
+class="td11"> (<span 
+class="cmbx-10">??</span>)  </td></tr></table>
+</div></div>
+<!--l. 342--><p class="noindent" >
+                                                                  
+
+                                                                  
+</p>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Contents</h3>
+   <div class="tableofcontents">
+    <span class="sectionToc" >1 <a 
+href="#x1-20001" id="QQ2-1-2">Probability</a></span>
+<br />     <span class="subsectionToc" >1.1 <a 
+href="#x1-30001.1" id="QQ2-1-3">Basic probability theory</a></span>
+   </div>
+                                                                  
+
+                                                                  
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-20001"></a>Probability</h3>
+<!--l. 347--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">1.1   </span> <a 
+ id="x1-30001.1"></a>Basic probability theory</h4>
+<!--l. 348--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.1.1   </span> <a 
+ id="x1-40001.1.1"></a>Definitions</h5>
+   <div class="newtheorem">
+<!--l. 349--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Definition </span>(Sample space)<span 
+class="cmbx-10">.</span>  </span>Probability statements, made in the context of an
+experiment, may result in a number of possible outcomes, each of which may be
+denoted <!--l. 350--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ω</mi></math>.
+The set of all possible outcomes is a sample space, denoted <!--l. 350--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi></math>.
+</p>
+   </div>
+<!--l. 351--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 352--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Definition </span>(Event)<span 
+class="cmbx-10">.</span>  </span>A collection of outcomes is an event. An event <!--l. 353--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+occurs if the outcome of the experiment of <!--l. 353--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>.
+<!--l. 353--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-rel">⊆</mo><mi mathvariant="normal">Ω</mi></math>.
+</p>
+   </div>
+<!--l. 354--><p class="indent" >
+</p>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.1.2   </span> <a 
+ id="x1-50001.1.2"></a>Sets</h5>
+   <div class="newtheorem">
+<!--l. 356--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Notation.</span>  </span>For events <!--l. 357--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>F</mi></math>,
+recall that </p>
+                                                                  
+
+                                                                  
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 359--><p class="noindent" ><!--l. 359--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+></math>
+     is the complement of <!--l. 359--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>,
+     the set of outcomes that are not in <!--l. 359--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>.
+     </p></li>
+     <li class="itemize">
+     <!--l. 360--><p class="noindent" ><!--l. 360--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>F</mi></math>
+     is the union of <!--l. 360--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     and <!--l. 360--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>,
+     the set of outcomes in <!--l. 360--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     or in <!--l. 360--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>
+     (or both).
+     </p></li>
+     <li class="itemize">
+     <!--l. 361--><p class="noindent" ><!--l. 361--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi></math>
+     is the intersection of <!--l. 361--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     and <!--l. 361--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>,
+     the set of outcomes in both <!--l. 361--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     and <!--l. 361--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>.
+     </p></li>
+     <li class="itemize">
+     <!--l. 362--><p class="noindent" ><!--l. 362--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-rel">⊆</mo> <mi 
+>F</mi></math>
+     denotes that <!--l. 362--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     is a subset of <!--l. 362--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>,
+     so every element of <!--l. 362--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     is in <!--l. 362--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>.
+     </p></li>
+     <li class="itemize">
+     <!--l. 363--><p class="noindent" ><!--l. 363--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-rel">⊂</mo> <mi 
+>F</mi></math>
+     denotes that <!--l. 363--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     is a subset of <!--l. 363--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>,
+     but <!--l. 363--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     and <!--l. 363--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>
+     are not identical.
+     </p></li>
+     <li class="itemize">
+     <!--l. 364--><p class="noindent" ><!--l. 364--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi><mo 
+class="MathClass-bin">∖</mo><mi 
+>F</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+></math>
+     is the set of elements of <!--l. 364--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     that are not in <!--l. 364--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>.
+     </p></li>
+     <li class="itemize">
+     <!--l. 365--><p class="noindent" ><!--l. 365--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>∅</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-open">{</mo><mo 
+class="MathClass-close">}</mo> <mo 
+class="MathClass-rel">=</mo><msup><mrow 
+> <mi mathvariant="normal">Ω</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+></math>
+     is the empty set, that which contains no elements.
+                                                                  
+
+                                                                  
+     </p></li>
+     <li class="itemize">
+     <!--l. 366--><p class="noindent" >If <!--l. 366--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>∅</mi></math>
+     then no outcomes are common to both <!--l. 366--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+     and <!--l. 366--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>.
+     These events are called disjoint, or mutually exclusive (m.e.)
+     </p></li>
+     <li class="itemize">
+     <!--l. 367--><p class="noindent" >If all possible pairs of events <!--l. 367--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></math>
+     are disjoint, they are called mutually disjoint or pairwise disjoint.</p></li></ul>
+   </div>
+<!--l. 369--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 370--><p class="noindent" ><span class="head">
+</p><!--l. 370--><p class="indent" >   [ <a 
+ id="x1-5001r0"></a>    </span>w]thmLaw[De Morgan’s] For events
+<!--l. 370--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>F</mi></math>,
+</p><!--tex4ht:inline--><!--l. 374--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+                         <mtr><mtd 
+columnalign="right" class="align-odd"><msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+></mtd>                         <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">∪</mo> <msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mspace width="2em"/></mtd>                                                  <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-5002r1"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.1)</mtext></mstyle><mspace width="0.33em" class="nbsp" />
+                         </mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+></mtd>                         <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">∩</mo> <msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mspace width="2em"/></mtd>                                                  <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-5003r2"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.2)</mtext></mstyle><mspace width="0.33em" class="nbsp" />
+   </mtd></mtr></mtable></math>
+   </div>
+<!--l. 375--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 376--><p class="noindent" ><span class="head">
+</p><!--l. 376--><p class="indent" >   [ <a 
+ id="x1-5004r0"></a>    </span>w]thmLaw[Distribution] For events
+<!--l. 376--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>F</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>G</mi></math>,
+                                                                  
+
+                                                                  
+</p><!--tex4ht:inline--><!--l. 380--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+                   <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>F</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>G</mi><mo 
+class="MathClass-close">)</mo></mtd>                   <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">∪</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>G</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                                      <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-5005r3"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.3)</mtext></mstyle><mspace width="0.33em" class="nbsp" />
+                   </mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>F</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>G</mi><mo 
+class="MathClass-close">)</mo></mtd>                   <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">∩</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>G</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                                      <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-5006r4"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.4)</mtext></mstyle><mspace width="0.33em" class="nbsp" />
+   </mtd></mtr></mtable></math>
+   </div>
+<!--l. 381--><p class="indent" >
+</p>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.1.3   </span> <a 
+ id="x1-60001.1.3"></a>Axioms</h5>
+   <div class="newtheorem">
+<!--l. 383--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">a .</span> <span 
+class="cmbx-10">a .</span>
+<span 
+class="cmbx-10">Definition </span>(<!--l. 383--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>σ</mi></math>-algebra event space)<span 
+class="cmbx-10">.</span>
+</span>For sample space <!--l. 384--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi></math>
+and events <!--l. 384--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">∈</mo><mi mathvariant="normal">Ω</mi></math> in
+an event space <!--l. 384--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">ℱ</mi></math>,
+<!--l. 384--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">ℱ</mi></math> is a
+<!--l. 384--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>σ</mi></math>-algebra
+if
+                                                                  
+
+                                                                  
+<!--tex4ht:inline--></p><!--l. 385--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mtable 
+class="gather">
+<mtr> 
+<mtd><mi mathvariant="normal">Ω</mi> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi></mtd>                         
+<mtd><mstyle 
+   id="x1-6001r5"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.5)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><mi 
+>E</mi> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="0.28em" class="thickpace"/><msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi></mtd>                 
+<mtd><mstyle 
+   id="x1-6002r6"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.6)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="0.28em" class="thickpace"/><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi></mtd> 
+<mtd> <mstyle 
+   id="x1-6003r7"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.7)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>                                </mtr></mtable>
+</math>
+<!--l. 389--><p class="nopar" >
+</p>
+   </div>
+<!--l. 390--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 391--><p class="noindent" ><span class="head">
+<a 
+ id="x1-6004r1"></a>
+<span 
+class="cmbx-10">Example 1.1.</span>  </span>Consider an experiment with fair coin tossed once, which lands
+on heads or tails, <!--l. 392--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi></math>
+or <!--l. 392--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>T</mi></math>.
+The sample space is <!--l. 392--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-open">{</mo><mi 
+>H</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>T</mi><mo 
+class="MathClass-close">}</mo></math>
+whilst the event space is <!--l. 392--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">ℱ</mi> <mo 
+class="MathClass-rel">=</mo> <mstyle mathsize="1.19em"><mrow><mo fence="true" form="prefix"> {</mo><mrow></mrow><mo fence="true" form="postfix"></mo></mrow></mstyle><mi 
+>∅</mi><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-open">{</mo><mi 
+>H</mi><mo 
+class="MathClass-close">}</mo><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-open">{</mo><mi 
+>T</mi><mo 
+class="MathClass-close">}</mo><mo 
+class="MathClass-punc">,</mo><mi mathvariant="normal">Ω</mi><mstyle mathsize="1.19em"><mrow><mo fence="true" form="prefix"> }</mo><mrow></mrow><mo fence="true" form="postfix"></mo></mrow></mstyle></math>.
+</p>
+   </div>
+<!--l. 393--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 394--><p class="noindent" ><span class="head">
+</p><!--l. 394--><p class="indent" >   [ <a 
+ id="x1-6005r0"></a>    </span>iom]thmAxiom[Kolmogrov’s] A probability function
+<!--l. 395--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>P</mi></math> is a
+mapping <!--l. 395--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>P</mi> <mo 
+class="MathClass-punc">:</mo> <mi 
+mathvariant="bold-script">ℱ</mi><mo 
+class="MathClass-rel">→</mo> <mi 
+>ℝ</mi></math>
+such that <!--l. 395--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+class="MathClass-op">∀</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mi 
+>E</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>F</mi> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi></math>,
+                                                                  
+
+                                                                  
+<!--tex4ht:inline--></p><!--l. 396--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mtable 
+class="gather">
+<mi 
+>x</mi> <mi 
+>.</mi>
+<mtr> 
+<mtd><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">≥</mo> <mn>0</mn></mtd>                         
+<mtd> <mstyle 
+   id="x1-6006r8"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.8)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi mathvariant="normal">Ω</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mtd>                         
+<mtd> <mstyle 
+   id="x1-6007r9"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.9)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>∅</mi><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="0.28em" class="thickpace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mtd> 
+<mtd> <mstyle 
+   id="x1-6008r10"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.10)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>                             </mtr></mtable>
+</math>
+<!--l. 400--><p class="nopar" >
+</p>
+   </div>
+<!--l. 401--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 402--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>For countably infinite sequences
+<!--l. 403--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mspace width="0.17em" class="thinspace"/></math> of mutually
+disjoint sets in <!--l. 403--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">ℱ</mi></math>,
+<a 
+href="#x1-6008r10">equation (1.10)</a> may need to be adapted to </p><table class="equation-star"><tr><td>
+<!--l. 404--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                    <mi 
+>P</mi> <mrow><mo fence="true" form="prefix"> (</mo><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+></mrow><mo fence="true" form="postfix">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+   </div>
+<!--l. 407--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.1.4   </span> <a 
+ id="x1-70001.1.4"></a>Constructing probability functions</h5>
+   <div class="newtheorem">
+<!--l. 409--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>The axioms capture how probabilities behave intuitively, based on
+relative  frequency  (how  many  times  an  event  occurs  over  many  repetitions
+of an experiment), but allocation of useful probabilities rely on mathematical
+modelling. All results will be deduced from the axioms.
+</p>
+   </div>
+<!--l. 411--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 412--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Method.</span>  </span>For a countable sample space, specify probabilities for each individual
+<!--l. 413--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ω</mi> <mo 
+class="MathClass-rel">∈</mo><mi mathvariant="normal">Ω</mi></math>. For
+<!--l. 413--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-open">{</mo><msub><mrow 
+><mi 
+>w</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>w</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mspace width="0.17em" class="thinspace"/><mo 
+class="MathClass-close">}</mo></math>, let
+<!--l. 413--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-open">{</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-close">}</mo></math> be a
+set of ‘weights’ satisfying </p><table class="equation-star"><tr><td>
+<!--l. 414--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                       <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">≥</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+>
+<mi 
+>k</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn>
+</math></td></tr></table>
+<!--l. 417--><p class="indent" >   Then for any event <!--l. 417--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-rel">⊆</mo><mi mathvariant="normal">Ω</mi></math>,
+</p><table class="equation-star"><tr><td>
+                                                                  
+
+                                                                  
+<!--l. 418--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                        <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-punc">:</mo><msub><mrow 
+><mi 
+>w</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-rel">∈</mo><mi 
+>E</mi></mrow></munder 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+>
+</math></td></tr></table>
+<!--l. 421--><p class="indent" >   Clearly this satisfies <a 
+href="#x1-6006r8">equations (1.8)</a><a 
+href="#x1-6007r9"> and (1.9)</a>. For <a 
+href="#x1-6008r10">equation (1.10)</a>, see that
+</p><table class="equation-star"><tr><td>
+<!--l. 422--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+  <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-punc">:</mo><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-rel">∈</mo><mi 
+>E</mi><mo 
+class="MathClass-bin">∪</mo><mi 
+>F</mi></mrow></munder 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-punc">:</mo><msub><mrow 
+><mi 
+>w</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-rel">∈</mo><mi 
+>E</mi></mrow></munder 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-punc">:</mo><msub><mrow 
+><mi 
+>w</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-rel">∈</mo><mi 
+>F</mi></mrow></munder 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+   </div>
+<!--l. 425--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 426--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>For  an  uncountable  sample  space,  construction  of  a  probability
+function is more difficult, but the axioms still work.
+</p>
+   </div>
+<!--l. 428--><p class="indent" >
+</p>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.1.5   </span> <a 
+ id="x1-80001.1.5"></a>Deductions</h5>
+   <div class="newtheorem">
+<!--l. 430--><p class="noindent" ><span class="head">
+</p><!--l. 430--><p class="indent" >   [ <a 
+ id="x1-8001r0"></a>    </span>r]thmCorollary <!--l. 431--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+class="MathClass-op">∀</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mi 
+>E</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>F</mi><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">∈</mo><mi 
+mathvariant="bold-script">ℱ</mi></math>,
+                                                                  
+
+                                                                  
+<!--tex4ht:inline--></p><!--l. 432--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mtable 
+class="gather">
+<mi 
+>o</mi> <mi 
+>.</mi>
+<mtr> 
+<mtd><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mtd>                           
+<mtd> <mstyle 
+   id="x1-8002r11"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.11)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">≤</mo> <mn>1</mn></mtd>                                   
+<mtd> <mstyle 
+   id="x1-8003r12"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.12)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mtd>           
+<mtd> <mstyle 
+   id="x1-8004r13"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.13)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><mi 
+>E</mi> <mo 
+class="MathClass-rel">⊆</mo> <mi 
+>F</mi><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="0.28em" class="thickpace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-bin">∖</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo><mspace width="1em" class="quad"/><mstyle 
+class="text"><mtext  >and</mtext></mstyle><mspace width="1em" class="quad"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mtd> 
+<mtd> <mstyle 
+   id="x1-8005r14"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.14)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>
+</mtr><mtr> 
+<mtd><mi 
+>P</mi> <mrow><mo fence="true" form="prefix"> (</mo><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+></mrow><mo fence="true" form="postfix">)</mo></mrow> <mo 
+class="MathClass-rel">≤</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>                  
+<mtd> <mstyle 
+   id="x1-8006r15"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.15)</mtext></mstyle><mspace width="0.33em" class="nbsp" /></mtd>                  </mtr></mtable>
+</math>
+<!--l. 438--><p class="nopar" >
+</p><!--tex4ht:inline--><!--l. 448--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+               <mtr><mtd 
+columnalign="right" class="align-odd">    <mtable  
+columnalign="right left" class="split">
+<mtr class="split-mtr"><mtd 
+class="split-mtd"> <mi 
+>P</mi> <mrow><mo fence="true" form="prefix"> (</mo><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+></mrow><mo fence="true" form="postfix">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mspace width="-0.17em" class="negthinspace"/><mspace width="-0.17em" class="negthinspace"/></mtd><mtd 
+class="split-mtd">  <mspace width="0.22em" class="thinspace"/><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></munderover 
+><mspace width="0.22em" class="thinspace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>
+</mtr><mtr class="split-mtr"><mtd 
+class="split-mtd">                     </mtd><mtd 
+class="split-mtd"> <mo 
+class="MathClass-bin">−</mo><mspace width="0.22em" class="thinspace"/><munder class="msub"><mrow 
+><mo  
+>∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>j</mi></mrow></munder 
+><mspace width="0.22em" class="thinspace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>
+</mtr><mtr class="split-mtr"><mtd 
+class="split-mtd">                     </mtd><mtd 
+class="split-mtd"> <mo 
+class="MathClass-bin">+</mo> <mspace width="-0.17em" class="negthinspace"/><munder class="msub"><mrow 
+><mo  
+>∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>j</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>k</mi></mrow></munder 
+><mspace width="-0.17em" class="negthinspace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>
+</mtr><mtr class="split-mtr"><mtd 
+class="split-mtd">                     </mtd><mtd 
+class="split-mtd">  <mspace width="0.33em" class="nbsp" /><mspace width="0.33em" class="nbsp" /><mspace width="0.33em" class="nbsp" /><mspace width="0.33em" class="nbsp" /><mi 
+class="MathClass-op">⋮</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo></mtd>
+</mtr><mtr class="split-mtr"><mtd 
+class="split-mtd">                  </mtd><mtd 
+class="split-mtd"> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>
+    </mtr></mtable>                                                                                                   </mtd>               <mtd 
+class="align-even"><mspace width="2em"/></mtd>               <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-8007r16"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1.16)</mtext></mstyle><mspace width="0.33em" class="nbsp" />
+   </mtd></mtr></mtable></math>
+                                                                  
+
+                                                                  
+   </div>
+<!--l. 449--><p class="indent" >
+</p><!--l. 450--><p class="noindent" >
+</p>
+   <div class="proof">
+<!--l. 450--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span></p>
+       <ul class="itemize1">
+       <li class="itemize">
+       <!--l. 452--><p class="noindent" >By <a 
+href="#x1-6007r9">equations (1.9)</a><a 
+href="#x1-6008r10"> and (1.10)</a>, </p><table class="equation-star"><tr><td>
+       <!--l. 453--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                         <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi mathvariant="normal">Ω</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn>
+</math></td></tr></table>
+       </li>
+       <li class="itemize">
+       <!--l. 456--><p class="noindent" >By <a 
+href="#x1-6006r8">equations (1.8)</a><a 
+href="#x1-8002r11"> and (1.11)</a>, </p><table class="equation-star"><tr><td>
+       <!--l. 457--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                                  <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn>
+</math></td></tr></table>
+       </li>
+       <li class="itemize">
+       <!--l. 460--><p class="noindent" >By <a 
+href="#x1-6006r8">equations (1.8)</a><a 
+href="#x1-8002r11"> and (1.11)</a>,
+                                                                  
+
+                                                                  
+       </p><!--tex4ht:inline--><!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+           <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mtd>           <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mstyle mathsize="1.19em"><mrow><mo fence="true" form="prefix"> (</mo><mrow></mrow><mo fence="true" form="postfix"></mo></mrow></mstyle><mi 
+>E</mi> <mo 
+class="MathClass-bin">∪</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>F</mi> <mo 
+class="MathClass-bin">∩</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo><mstyle mathsize="1.19em"><mrow><mo fence="true" form="prefix"> )</mo><mrow></mrow><mo fence="true" form="postfix"></mo></mrow></mstyle><mspace width="2em"/></mtd>                         <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi> <mo 
+class="MathClass-bin">∩</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                     <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">∩</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                    <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><msup><mrow 
+><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mspace width="2em"/></mtd>                     <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>E</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                  <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mstyle mathsize="1.19em"><mrow><mo fence="true" form="prefix"> (</mo><mrow></mrow><mo fence="true" form="postfix"></mo></mrow></mstyle><msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">∪</mo> <mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo><mstyle mathsize="1.19em"><mrow><mo fence="true" form="prefix"> )</mo><mrow></mrow><mo fence="true" form="postfix"></mo></mrow></mstyle><mspace width="2em"/></mtd>               <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>           <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>               <mtd 
+columnalign="right" class="align-label"></mtd>           <mtd 
+class="align-label">
+<mspace width="2em"/></mtd></mtr></mtable></math>
+       </li>
+       <li class="itemize">
+       <!--l. 478--><p class="noindent" >Since <!--l. 478--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-rel">⊆</mo> <mi 
+>F</mi></math>,
+       <!--l. 478--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">⊆</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+></math>, so
+       <!--l. 478--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi> <mo 
+class="MathClass-bin">∪</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi mathvariant="normal">Ω</mi></math>.
+       So by <a 
+href="#x1-8002r11">equations (1.11)</a><a 
+href="#x1-8004r13"> and (1.13)</a>,
+                                                                  
+
+                                                                  
+       </p><!--tex4ht:inline--><!--l. 487--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+          <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-bin">∖</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mtd>                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi> <mo 
+class="MathClass-bin">∩</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                        <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                        <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi> <mo 
+class="MathClass-bin">∪</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>          <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                        <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>c</mi></mrow></msup 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi mathvariant="normal">Ω</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>           <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                        <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                      <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+</mtd></mtr><mtr><mtd columnspan="4" class="intertext"><mstyle 
+class="intertext"><mtext  >By </mtext><mtext 
+ xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#x1-6006r8"  class="label" >equation (1.8)</mtext><mtext 
+class="endlabel">,</mtext></mstyle></mtd></mtr><mtr><mtd>
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-bin">∖</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mtd>          <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                             <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mtd>                   <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                             <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+<mspace width="2em"/></mtd></mtr></mtable></math>
+       </li>
+       <li class="itemize">
+       <!--l. 488--><p class="noindent" >(by induction) The case <!--l. 488--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>
+       is obvious (and <!--l. 488--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn></math>
+       is given by <a 
+href="#x1-8004r13">equation (1.13)</a>). Let </p><table class="equation-star"><tr><td>
+       <!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                                          <msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>r</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>r</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+>
+</math></td></tr></table>
+       <!--l. 492--><p class="noindent" >Suppose true for <!--l. 492--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi></math>.
+       Then </p><table class="equation-star"><tr><td>
+                                                                  
+
+                                                                  
+       <!--l. 493--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                                     <mi 
+>P</mi> <mrow><mo fence="true" form="prefix"> (</mo><mrow><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow><mo fence="true" form="postfix">)</mo></mrow> <mo 
+class="MathClass-rel">≤</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+       <!--l. 496--><p class="noindent" >By <a 
+href="#x1-8004r13">equation (1.13)</a>,
+       </p><!--tex4ht:inline--><!--l. 504--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+          <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>          <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∪</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>r</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                             <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msup><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>          <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+</mtd></mtr><mtr><mtd columnspan="4" class="intertext"><mstyle 
+class="intertext"><mtext  >By </mtext><mtext 
+ xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#x1-6006r8"  class="label" >equation (1.8)</mtext><mtext 
+class="endlabel">,</mtext></mstyle></mtd></mtr><mtr><mtd>
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                         <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                   <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>          <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">≤</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                           <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+<mspace width="2em"/></mtd></mtr></mtable></math>
+       <!--l. 505--><p class="noindent" >So true for <!--l. 505--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></math>.
+       </p><!--l. 507--><p class="noindent" >True for <!--l. 507--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>, and
+       true for <!--l. 507--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="0.28em" class="thickpace"/></math> true for
+       <!--l. 507--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></math>, so by induction,
+       true for <!--l. 507--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">∈</mo> <mi 
+>ℕ</mi></math>.
+       </p></li>
+       <li class="itemize">
+       <!--l. 508--><p class="noindent" >(by induction) The case <!--l. 508--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn></math>
+       is given by <a 
+href="#x1-8004r13">equation (1.13)</a>. As before, let </p><table class="equation-star"><tr><td>
+                                                                  
+
+                                                                  
+       <!--l. 509--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                                          <msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>r</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>r</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+>
+</math></td></tr></table>
+       <!--l. 512--><p class="noindent" >Suppose true for <!--l. 512--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi></math>.
+       Then by <a 
+href="#x1-8004r13">equation (1.13)</a>, </p><table class="equation-star"><tr><td>
+       <!--l. 513--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+          <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>r</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∪</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+       <!--l. 516--><p class="noindent" >By <a 
+href="#x1-5005r3">equation (1.3)</a>,
+       </p><!--tex4ht:inline--><!--l. 521--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+          <mtr><mtd 
+columnalign="right" class="align-odd"><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+></mtd>          <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∪</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∪</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mspace width="2em"/></mtd>                   <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                   <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">∪</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∪</mo> <mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∪</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>           <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                   <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><mo 
+class="MathClass-punc">:</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∑</mo>
+</mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mspace width="2em"/></mtd>          <mtd 
+columnalign="right" class="align-label"></mtd>          <mtd 
+class="align-label">
+<mspace width="2em"/></mtd></mtr></mtable></math>
+       <!--l. 522--><p class="noindent" >By the assumption,
+                                                                  
+
+                                                                  
+       </p><!--tex4ht:inline--><!--l. 526--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+     <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd>         <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>r</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>     <mtd 
+columnalign="right" class="align-label"></mtd>     <mtd 
+class="align-label">
+     <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi> <mrow><mo fence="true" form="prefix"> (</mo><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+></mrow><mo fence="true" form="postfix">)</mo></mrow></mtd>     <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>r</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>      <mtd 
+columnalign="right" class="align-label"></mtd>     <mtd 
+class="align-label">
+     <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>              <mtd 
+class="align-even"><mspace width="2em"/></mtd>                                              <mtd 
+columnalign="right" class="align-label">
+</mtd></mtr></mtable></math>
+       <!--l. 527--><p class="noindent" >So
+                                                                  
+
+                                                                  
+       </p><!--tex4ht:inline--><!--l. 551--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+ <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="-0.17em" class="negthinspace"/></mtd> <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                            <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mspace width="-0.17em" class="negthinspace"/><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>r</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd> <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even">   <mo 
+class="MathClass-bin">−</mo><mrow><mo fence="true" form="prefix"> (</mo><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>r</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow><mo fence="true" form="postfix">)</mo></mrow><mspace width="2em"/></mtd>           <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mspace width="-0.17em" class="negthinspace"/><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                                  <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even">   <mo 
+class="MathClass-bin">−</mo><munder class="msub"><mrow 
+><mo  
+>∑</mo>
+   </mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-rel">≤</mo><mi 
+>i</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>j</mi><mo 
+class="MathClass-rel">≤</mo><mi 
+>k</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>r</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>  <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even">   <mo 
+class="MathClass-bin">−</mo><mrow><mo fence="true" form="prefix"> (</mo><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>r</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow><mo fence="true" form="postfix">)</mo></mrow><mspace width="2em"/></mtd>           <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+       </mtd></mtr><mtr><mtd columnspan="4" class="intertext"><mstyle 
+class="intertext"><mtext  >Substitute back </mtext><mstyle 
+class="math"><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+></mstyle><mtext  >, and pair up and combine terms from the two
+       lines.</mtext></mstyle></mtd></mtr><mtr><mtd>
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mspace width="-0.17em" class="negthinspace"/><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                                  <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even">   <mo 
+class="MathClass-bin">−</mo><mrow><mo fence="true" form="prefix"> (</mo><mrow><munder class="msub"><mrow 
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-rel">≤</mo><mi 
+>i</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>j</mi><mo 
+class="MathClass-rel">≤</mo><mi 
+>k</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow><mo fence="true" form="postfix">)</mo></mrow><mspace width="2em"/></mtd>        <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even">   <mo 
+class="MathClass-bin">+</mo> <mrow><mo fence="true" form="prefix"> (</mo><mrow><munder class="msub"><mrow 
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-rel">≤</mo><mi 
+>i</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>j</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>l</mi><mo 
+class="MathClass-rel">≤</mo><mi 
+>k</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>l</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-rel">≤</mo><mi 
+>i</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>j</mi><mo 
+class="MathClass-rel">≤</mo><mi 
+>k</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow><mo fence="true" form="postfix">)</mo></mrow><mspace width="2em"/></mtd>   <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even">  <mspace width="0.28em" class="thickpace"/><mspace width="0.28em" class="thickpace"/><mi 
+class="MathClass-op">⋮</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mspace width="2em"/></mtd>                                                  <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>U</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mtd> <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo>   <mspace width="0.22em" class="thinspace"/><munderover accentunder="false" accent="false"><mrow  
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></munderover 
+><mspace width="0.22em" class="thinspace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">−</mo><munder class="msub"><mrow 
+><mo  
+>∑</mo>
+   </mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-rel">≤</mo><mi 
+>i</mi><mo 
+class="MathClass-rel">&#x003C;</mo><mi 
+>j</mi><mo 
+class="MathClass-rel">≤</mo><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></munder 
+><mspace width="0.22em" class="thinspace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mo>…</mo><mspace width="2em"/></mtd>        <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+ <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>        <mtd 
+class="align-even">  <mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mo 
+class="MathClass-open">(</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-close">)</mo></mrow><mrow 
+><mi 
+>k</mi></mrow></msup 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mspace width="2em"/></mtd>                            <mtd 
+columnalign="right" class="align-label"></mtd> <mtd 
+class="align-label">
+<mspace width="2em"/></mtd></mtr></mtable></math>
+       <!--l. 552--><p class="noindent" >Hence true for <!--l. 552--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></math>.
+       </p><!--l. 554--><p class="noindent" >True for <!--l. 554--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn></math>, and
+       true for <!--l. 554--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="0.28em" class="thickpace"/></math> true for
+       <!--l. 554--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></math>, so by induction,
+       true for <!--l. 554--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">∈</mo> <mi 
+>ℤ</mi><mo 
+class="MathClass-punc">,</mo><mspace width="0.33em" class="nbsp" /><mi 
+>n</mi> <mo 
+class="MathClass-rel">≥</mo> <mn>2</mn></math>.</p></li></ul>
+                                                                 □
+   </div>
+<!--l. 557--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.1.6   </span> <a 
+ id="x1-90001.1.6"></a>Independence</h5>
+   <div class="newtheorem">
+<!--l. 558--><p class="noindent" ><span class="head">
+                                                                  
+
+                                                                  
+<span 
+class="cmbx-10">Definition </span>(Independent)<span 
+class="cmbx-10">.</span>  </span>Events <!--l. 559--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+and <!--l. 559--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>
+are independent if </p><table class="equation-star"><tr><td>
+<!--l. 560--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                       <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+<!--l. 563--><p class="indent" >   Events <!--l. 563--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></math>
+are mutually independent if, for any collection
+<!--l. 563--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><msub><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><msub><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></msub 
+></math>,
+</p><table class="equation-star"><tr><td>
+<!--l. 564--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                   <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><msub><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mi 
+class="MathClass-op">…</mi><mo> &ApplyFunction;<!--FUNCTION APPLICATION--></mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><msub><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo  
+> ∏</mo>
+  </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><msub><mrow 
+>
+<mi 
+>i</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></msub 
+><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+   </div>
+<!--l. 567--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 568--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>Independence captures the idea that events are unrelated, that one
+does not affect the other.
+</p>
+   </div>
+<!--l. 570--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <div class="newtheorem">
+<!--l. 571--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>For independent events <!--l. 572--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>F</mi></math>,
+</p><!--tex4ht:inline--><!--l. 576--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+        <mtr><mtd 
+columnalign="right" class="align-odd"><mstyle 
+class="text"><mtext  >Mutually exclusive</mtext></mstyle></mtd>        <mtd 
+class="align-even"><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇔</mo><mspace width="0.28em" class="thickpace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇔</mo><mspace width="0.28em" class="thickpace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mspace width="2em"/></mtd>        <mtd 
+columnalign="right" class="align-label"></mtd>        <mtd 
+class="align-label">
+        <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                        <mtd 
+class="align-even"><mspace width="0.28em" class="thickpace"/><mo 
+class="MathClass-rel">⇔</mo><mspace width="0.28em" class="thickpace"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mstyle 
+class="text"><mtext  > or </mtext></mstyle><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mspace width="2em"/></mtd>               <mtd 
+columnalign="right" class="align-label"></mtd>        <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+   </div>
+<!--l. 577--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 578--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>Mutual            independence            is            a            stronger
+condition  than  pairwise  independence,  which  only  requires  pairs  of  events
+<!--l. 579--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></math>
+to be independent.
+</p>
+   </div>
+<!--l. 580--><p class="indent" >
+</p>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.1.7   </span> <a 
+ id="x1-100001.1.7"></a>Conditional probability</h5>
+   <div class="newtheorem">
+<!--l. 582--><p class="noindent" ><span class="head">
+                                                                  
+
+                                                                  
+<span 
+class="cmbx-10">Definition </span>(Conditional probability)<span 
+class="cmbx-10">.</span>  </span>The conditional probability of
+<!--l. 583--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math> given
+<!--l. 583--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math> is the probability
+that <!--l. 583--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math> occurs when
+<!--l. 583--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math> is known to have
+occurred. For <!--l. 583--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></math>,
+it is given by </p><table class="equation-star"><tr><td>
+<!--l. 584--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                        <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow> 
+   <mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mrow></mfrac>
+</math></td></tr></table>
+   </div>
+<!--l. 587--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 588--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>The definition of conditional probability may be interpreted as changing
+the sample space from <!--l. 589--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi></math>
+to <!--l. 589--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>,
+that is <!--l. 589--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></math>
+is the probability of <!--l. 589--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>
+given that the outcome of the experiment is known to be in <!--l. 589--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>.
+Note that <!--l. 589--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-rel">|</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>.
+</p>
+   </div>
+<!--l. 590--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 591--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10">Remark.</span>  </span>If <!--l. 592--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+and <!--l. 592--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math> are
+independent, and <!--l. 592--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo><mo 
+class="MathClass-rel">≠</mo><mn>0</mn></math>,
+then </p><table class="equation-star"><tr><td>
+                                                                  
+
+                                                                  
+<!--l. 593--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+               <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow> 
+   <mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mrow></mfrac>    <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow> 
+    <mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>E</mi><mo 
+class="MathClass-close">)</mo></mrow></mfrac>     <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+<!--l. 596--><p class="indent" >   So
+<!--l. 596--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi></math>
+occurring         does         not         change         the         chance         of
+<!--l. 596--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>
+occurring.
+</p>
+   </div>
+<!--l. 597--><p class="indent" >
+</p>
+   <div class="newtheorem">
+<!--l. 599--><p class="noindent" ><span class="head">
+</p><!--l. 599--><p class="indent" >   [ <a 
+ id="x1-10001r0"></a>    </span>w]thmLaw[Total probability] Let
+<!--l. 600--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-open">{</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">}</mo></math> be a partition
+of <!--l. 600--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi></math> (the
+<!--l. 600--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>s are disjoint, and
+their union gives <!--l. 600--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi></math>).
+Then for any event <!--l. 600--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math>,
+</p><table class="equation-star"><tr><td>
+<!--l. 601--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                     <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+   </div>
+<!--l. 604--><p class="indent" >
+                                                                  
+
+                                                                  
+</p><!--l. 605--><p class="noindent" >
+</p>
+   <div class="proof">
+<!--l. 606--><p class="indent" >   <span class="head">
+<span 
+class="cmbx-10">a .</span>  <span 
+class="cmti-10">Proof.</span> </span>By induction on <a 
+href="#x1-5005r3">equation (1.3)</a>, </p><table class="equation-star"><tr><td>
+<!--l. 607--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                 <mi 
+>F</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>F</mi> <mo 
+class="MathClass-bin">∩</mo><mi mathvariant="normal">Ω</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>F</mi> <mo 
+class="MathClass-bin">∩</mo><mrow><mo fence="true" form="prefix"> (</mo><mrow><munder class="msub"><mrow 
+><mo  
+>⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow><mo fence="true" form="postfix">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo  
+> ⋃</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi>
+</math></td></tr></table>
+<!--l. 610--><p class="indent" >   So </p><table class="equation-star"><tr><td>
+<!--l. 611--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+              <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo  
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo>             <mi 
+>□</mi>
+</math></td></tr></table>
+   </div>
+   <div class="newtheorem">
+<!--l. 615--><p class="noindent" ><span class="head">
+<a 
+ id="x1-10002r1"></a>
+<span 
+class="cmbx-10">Theorem 1.1 </span>(Bayes’)<span 
+class="cmbx-10">.</span>  </span> Let <!--l. 616--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-open">{</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">}</mo></math>
+be a partition of <!--l. 616--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi mathvariant="normal">Ω</mi></math>
+and <!--l. 616--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi></math> be any
+event with <!--l. 616--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></math>.
+Then </p><table class="equation-star"><tr><td>
+                                                                  
+
+                                                                  
+<!--l. 617--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+            <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow> 
+      <mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow></mfrac>       <mo 
+class="MathClass-rel">=</mo>    <mfrac><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow> 
+<mrow 
+><munder class="msub"><mrow 
+><mo  
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow></mfrac>
+</math></td></tr></table>
+   </div>
+<!--l. 620--><p class="indent" >
+</p><!--l. 621--><p class="noindent" >
+</p>
+   <div class="proof">
+<!--l. 622--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>By definition of conditional probability </p><table class="equation-star"><tr><td>
+<!--l. 623--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+          <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow> 
+   <mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-close">)</mo></mrow></mfrac>    <mspace width="1em" class="quad"/><mstyle 
+class="text"><mtext  >and</mtext></mstyle><mspace width="1em" class="quad"/><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>F</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>F</mi><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-close">)</mo>
+</math></td></tr></table>
+<!--l. 626--><p class="indent" >   The denominator comes from the Law of Total Probability (<a 
+href="#x1-10001r0"></a>).                □
+</p>
+   </div>
+   <div class="newtheorem">
+<!--l. 628--><p class="noindent" ><span class="head">
+<a 
+ id="x1-10003r2"></a>
+<span 
+class="cmbx-10">Example 1.2.</span>  </span>An urn contains five red balls and one white ball. A ball is drawn
+and then it and another ball of the same colour are placed back in the urn. Finally a
+second ball is drawn.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+  1. </dt><dd 
+class="enumerate-enumitem">What is the probability that the second ball is white?
+                                                                  
+
+               </dd><dt class="enumerate-enumitem">
+            2. </dt><dd 
+class="enumerate-enumitem">If the second ball is white, what is the probability that the first was red?</dd></dl>
+          <!--l. 636--><p class="indent" >    Let <!--l. 636--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math> be the
+          probability the <!--l. 636--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>i</mi></mrow><mrow 
+></math>
+          </mrow>
+          </p><!--l. 636--><p class="indent" >   </msup 
+>th<!--l. 636--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>b</mi><mi 
+>a</mi><mi 
+>l</mi><mi 
+>l</mi><mi 
+>i</mi><mi 
+>s</mi><mi 
+>w</mi><mi 
+>h</mi><mi 
+>i</mi><mi 
+>t</mi><mi 
+>e</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>a</mi><mi 
+>n</mi><mi 
+>d</mi></math>R˙i<!--l. 636--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi><mi 
+>h</mi><mi 
+>e</mi><mi 
+>c</mi><mi 
+>o</mi><mi 
+>r</mi><mi 
+>r</mi><mi 
+>e</mi><mi 
+>s</mi><mi 
+>p</mi><mi 
+>o</mi><mi 
+>n</mi><mi 
+>d</mi><mi 
+>i</mi><mi 
+>n</mi><mi 
+>g</mi><mi 
+>p</mi><mi 
+>r</mi><mi 
+>o</mi><mi 
+>b</mi><mi 
+>a</mi><mi 
+>b</mi><mi 
+>i</mi><mi 
+>l</mi><mi 
+>i</mi><mi 
+>t</mi><mi 
+>y</mi><mi 
+>f</mi><mi 
+>o</mi><mi 
+>r</mi><mi 
+>r</mi><mi 
+>e</mi><mi 
+>d</mi><mo 
+class="MathClass-punc">.</mo></math>
+          By the Law of Total Probability (<a 
+href="#x1-10001r0"></a>), </p><table class="equation-star"><tr><td>
+          <!--l. 639--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+          <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><mi 
+>R</mi><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-bin">+</mo> <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>7</mn></mrow></mfrac> <mfrac><mrow 
+><mn>5</mn></mrow> 
+<mrow 
+><mn>6</mn></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>2</mn></mrow> 
+<mrow 
+><mn>7</mn></mrow></mfrac> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>6</mn></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>6</mn></mrow></mfrac>
+</math></td></tr></table>
+          By Bayes’ Theorem (<a 
+href="#x1-10002r1">1.1</a>), <table class="equation-star"><tr><td>
+          <!--l. 643--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                        <mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow> 
+      <mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-open">(</mo><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-close">)</mo></mrow></mfrac>        <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>7</mn></mrow></mfrac> <mfrac><mrow 
+><mn>5</mn></mrow> 
+<mrow 
+><mn>6</mn></mrow></mfrac></mrow> 
+ <mrow 
+><mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>6</mn></mrow></mfrac></mrow></mfrac>   <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>5</mn></mrow> 
+<mrow 
+><mn>7</mn></mrow></mfrac>
+</math></td></tr></table>
+             </div>
+          <!--l. 646--><p class="indent" >
+             102
+             [w]thmLaw[Generalised Multiplication] For events <span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span><span 
+class="cmmi-10">,</span><span 
+class="cmmi-10">...</span><span 
+class="cmmi-10">,E</span><span 
+class="cmmi-7">n</span> that satisfy
+                                 <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>) <span 
+class="cmmi-10">&#x003E; </span>0<span 
+class="cmmi-10">,</span>
+                                          27
+
+               <span 
+class="cmmi-10">P</span> <span 
+class="cmex-10">(</span> <span 
+class="cmmi-7">n</span>
+    <span 
+class="cmex-10">⋂</span>
+  <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span> <span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmex-10">)</span>
+                         =  <span 
+class="cmmi-7">n</span>
+ <span 
+class="cmex-10">∏</span>
+ <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span> <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>)
+           <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span>)<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span>)<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">3</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span>)<span 
+class="cmmi-10">...</span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>)
+          <span 
+class="cmti-10">Proof.</span> All conditional probabilities are defined, since eq:cor4 gives
+                     <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span>) <span 
+class="cmsy-10">≥ </span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span>) <span 
+class="cmsy-10">≥</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">≥ </span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>) <span 
+class="cmmi-10">&#x003E; </span>0
+          By the definition of conditional probability,
+               <span 
+class="cmmi-7">n</span>
+              <span 
+class="cmex-10">∏</span>
+              <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span> <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>) =  <span 
+class="cmmi-7">n</span>
+ <span 
+class="cmex-10">∏</span>
+ <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span>   <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span>) __
+<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>)
+                                    =  <span 
+class="cmmi-7">n</span>
+ <span 
+class="cmex-10">∏</span>
+ <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span> <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span>) <span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>
+ <span 
+class="cmex-10">∏</span>
+ <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span>              1 __________
+<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span>)
+                                    = <span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>
+ <span 
+class="cmex-10">∏</span>
+ <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span> <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span>) 
+<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span>)<span 
+class="cmmi-10">P</span> <span 
+class="cmex-10">(</span> <span 
+class="cmmi-7">n</span>
+    <span 
+class="cmex-10">⋂</span>
+  <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span> <span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmex-10">)</span>
+                                    = <span 
+class="cmmi-10">P</span> <span 
+class="cmex-10">(</span> <span 
+class="cmmi-7">n</span>
+    <span 
+class="cmex-10">⋂</span>
+  <span 
+class="cmmi-7">i</span><span 
+class="cmr-7">=1</span> <span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">i</span><span 
+class="cmex-10">)</span>
+          or written out,
+          <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span>)<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span>)
+   <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span>)    <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">3</span>) 
+   <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span>)    <span 
+class="cmmi-10">...</span>  <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span>) __
+<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>)
+                         = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span>)<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span>)<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmr-7">3</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">2</span>)<span 
+class="cmmi-10">...</span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">E</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">∩</span><span 
+class="cmsy-10">⋅⋅⋅</span><span 
+class="cmsy-10">∩ </span><span 
+class="cmmi-10">E</span><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">−</span><span 
+class="cmr-7">1</span>)
+                                                                          __
+          <span 
+class="cmbx-10">Remark. </span>This may be useful for problems where an event of interest arises
+          from a sequence of contributing events.
+          <span 
+class="cmbx-12">1.2</span>   <span 
+class="cmbx-12">Discrete random variables</span>
+          <span 
+class="cmbx-10">1.2.1</span>  <span 
+class="cmbx-10">Distributions</span>
+          <span 
+class="cmbx-10">Definition </span>(Discrete r.v.)<span 
+class="cmbx-10">. </span>For a countable sample space Ω, a function
+                                       <span 
+class="cmmi-10">X </span>: Ω <span 
+class="cmsy-10">→</span>
+          is called a discrete random variable (discrete r.v.).  This maps outcomes of an
+          experiment to numbers. For brevity, its usage may be notated
+                         <span 
+class="cmmi-10">P</span>(<span 
+class="cmsy-10">{</span>(<span 
+class="cmmi-10">ω</span>) = <span 
+class="cmmi-10">x</span><span 
+class="cmsy-10">}</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">ω</span>) = <span 
+class="cmmi-10">x</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">x</span>)
+                                          28
+
+          <span 
+class="cmbx-10">Example 1.3. </span>When tossing a coin twice, the number of heads obtained may
+          be given by the function
+                          <span 
+class="cmmi-10">X </span>= <span 
+class="cmsy-10">{</span>(<span 
+class="cmmi-10">HH,</span>2)<span 
+class="cmmi-10">,</span>(<span 
+class="cmmi-10">HT,</span>1)<span 
+class="cmmi-10">,</span>(<span 
+class="cmmi-10">TH,</span>1)<span 
+class="cmmi-10">,</span>(<span 
+class="cmmi-10">TT,</span>0)<span 
+class="cmsy-10">}</span>
+          <span 
+class="cmbx-10">Definition </span>(Probability mass function)<span 
+class="cmbx-10">. </span>For a discrete random variable <span 
+class="cmmi-10">X </span>tak-
+          ing values in the set <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span>, the function <span 
+class="cmmi-10">p</span><span 
+class="cmmi-7">X</span>(<span 
+class="cmmi-10">x</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">x</span>) is the probability
+          mass function (pmf) of <span 
+class="cmmi-10">X</span>.
+             If unambiguous, this may be written <span 
+class="cmmi-10">p</span><span 
+class="cmmi-7">X</span>(<span 
+class="cmmi-10">x</span>) = <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span>).  For integers, this may
+          be written <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">n</span>) = <span 
+class="cmmi-10">p</span><span 
+class="cmmi-7">n</span>.
+          <span 
+class="cmbx-10">Remark. </span>For a collection <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)<span 
+class="cmsy-10">} </span>to be a pmf, it must satisfy the axioms of
+          probability (th:Kolmo).
+      eq:Kolmo1. Since the <span 
+class="cmmi-10">p</span>s are probabilities of events, <span 
+class="cmsy-10">∀</span><span 
+class="cmmi-10">i p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>) <span 
+class="cmsy-10">≥ </span>0.
+      eq:Kolmo2. Since the sample space may be written as a union of disjoint events
+                                       Ω = <span 
+class="cmex-10">⋃</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmsy-10">{</span>(<span 
+class="cmmi-10">ω</span>) = <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span>
+                 by eq:Kolmo3,
+                             <span 
+class="cmex-10">∑</span>
+                              <span 
+class="cmmi-7">i</span> <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>) = <span 
+class="cmmi-10">P</span> <span 
+class="cmex-10">(</span>
+  <span 
+class="cmex-10">⋃</span>
+  <span 
+class="cmmi-7">i</span>  <span 
+class="cmsy-10">{</span>(<span 
+class="cmmi-10">ω</span>) = <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span><span 
+class="cmex-10">)</span>
+                                    = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">P</span>(<span 
+class="cmsy-10">{</span>(<span 
+class="cmmi-10">ω</span>) = <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span>) = <span 
+class="cmmi-10">P</span>(Ω) = 1
+      eq:Kolmo3. Satisfied by the selection of mutually independent events <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span>.
+          <span 
+class="cmbx-10">Remark. </span>The collection <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">} </span>may be regarded as a sample space in its own
+          right, with the probability function <span 
+class="cmmi-10">P</span>(<span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span>) = <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmmi-10">.</span>). This may be appropriate
+          to use when only the values taken by <span 
+class="cmmi-10">X </span>are of interest.
+          <span 
+class="cmbx-10">Notation. </span>It may be useful to consider the probability that <span 
+class="cmmi-10">X </span>lies within an
+          interval.
+                     <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">a </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">b</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmsy-10">{≤ </span><span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">ω</span>) <span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">b</span><span 
+class="cmsy-10">}</span>) =    <span 
+class="cmex-10">∑</span> 
+<span 
+class="cmmi-7">i</span><span 
+class="cmr-7">:</span><span 
+class="cmmi-7">a</span><span 
+class="cmsy-7">≤</span><span 
+class="cmmi-7">x</span><span 
+class="cmmi-5">i</span><span 
+class="cmsy-7">≤</span><span 
+class="cmmi-7">b</span> <span 
+class="cmmi-10">p</span><span 
+class="cmmi-7">x</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+          <span 
+class="cmbx-10">Definition </span>(CDF)<span 
+class="cmbx-10">. </span>For any random variable <span 
+class="cmmi-10">X</span>, the (Cumulative) distribution
+          function (cdf) of <span 
+class="cmmi-10">X </span>is
+                            <span 
+class="cmmi-10">F</span><span 
+class="cmmi-7">X</span>(<span 
+class="cmmi-10">x</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">x</span>) =  <span 
+class="cmex-10">∑</span> 
+<span 
+class="cmmi-7">i</span><span 
+class="cmr-7">:</span><span 
+class="cmmi-7">x</span><span 
+class="cmmi-5">i</span><span 
+class="cmsy-7">≤</span><span 
+class="cmmi-7">x</span> <span 
+class="cmmi-10">p</span><span 
+class="cmmi-7">X</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+                                          29
+
+             [ule]thmRule
+                                <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">x</span>) <span 
+class="cmsy-10">→ </span>0   as   <span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">→−∞</span>                  (1.17)
+                                 <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">x</span>) <span 
+class="cmsy-10">→ </span>1   as   <span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">→∞</span>                  (1.18)
+                               <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">x</span>) is monotonic increasing                (1.19)
+             <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">x</span>) is a step function, with discontinuities at <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span> of height <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)   (1.20)
+          <span 
+class="cmti-10">Proof.</span> Obvious from the axioms of probability (th:Kolmo).                        __
+          <span 
+class="cmbx-10">Remark. </span>The pmf may be derived from the cdf as
+              <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">x</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">x</span>) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X &#x003C; x</span>) =  lim 
+<span 
+class="cmmi-7">δ</span><span 
+class="cmsy-7">→</span><span 
+class="cmr-7">0</span><span 
+class="cmr-5">+</span> (<span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">x</span>) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">δ</span>))
+          A general version of this result follows in thm:disint
+             [ule]thmRule
+                          <span 
+class="cmmi-10">a &#x003C; b </span>=<span 
+class="cmsy-10">⇒ </span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">a &#x003C; X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">b</span>) = <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">b</span>) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">a</span>)
+          <span 
+class="cmti-10">Proof.</span> By eq:Kolmo3
+                             <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">b</span>) = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">b</span>)
+                                 = <span 
+class="cmmi-10">P</span>((<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">a</span>) <span 
+class="cmsy-10">∪ </span>(<span 
+class="cmmi-10">a &#x003C; X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">b</span>))
+                                 = <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">a</span>) + <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">a &#x003C; X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">b</span>)
+                                 = <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">a</span>) + <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">a &#x003C; X </span><span 
+class="cmsy-10">≤ </span><span 
+class="cmmi-10">b</span>)                     __
+          <span 
+class="cmbx-10">1.2.2</span>  <span 
+class="cmbx-10">Expectation</span>
+          <span 
+class="cmbx-10">Definition </span>(Median)<span 
+class="cmbx-10">. </span>The median of a distribution is
+                                      <span 
+class="cmmi-10">x </span>: <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">x</span>) = 1 
+2
+          If repeating an experiment, a random variable would be expected to lie in equal
+          proportions above and below the median.
+          <span 
+class="cmbx-10">Definition </span>(Mode)<span 
+class="cmbx-10">. </span>The mode is the value with highest probability.
+                                          30
+
+          <span 
+class="cmbx-10">Definition </span>(Expectation)<span 
+class="cmbx-10">. </span>The expectation, or expected value, or (population)
+          mean of a discrete random variable <span 
+class="cmmi-10">X </span>is
+                          <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) := <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>) = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+          for probability mass function <span 
+class="cmmi-10">p</span>, provided the sum is well-defined.
+          <span 
+class="cmbx-10">Remark. </span>In the countably-infinite case, the sum is not guaranteed to converge.
+          <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) exists if the sum converges absolutely, that is, if
+                                  <span 
+class="cmex-10">∑</span>
+                                   <span 
+class="cmmi-7">i</span> <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>) <span 
+class="cmmi-10">&#x003C; </span><span 
+class="cmsy-10">∞</span>
+          <span 
+class="cmbx-10">Remark. </span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) represents an idealised long-run average for the values of <span 
+class="cmmi-10">X</span>.
+          <span 
+class="cmbx-10">Remark. </span>Expected value may be calculated using the values taken by <span 
+class="cmmi-10">X</span>, or
+          directly on the sample space.
+                         <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">x</span>) = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmmi-10">P</span><span 
+class="cmsy-10">{</span>(<span 
+class="cmmi-10">ω</span>) = <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">} </span>= <span 
+class="cmex-10">∑</span> 
+<span 
+class="cmmi-7">ω</span><span 
+class="cmsy-7">∈</span><span 
+class="cmr-7">Ω</span> <span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">ω</span>)<span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">ω</span>)
+             [op]thmProposition[Expectation of a function] For a random variable <span 
+class="cmmi-10">X </span>and
+          <span 
+class="cmsy-10">→</span>, <span 
+class="cmmi-10">ϕ</span>(<span 
+class="cmmi-10">X</span>) is a random variable <span 
+class="cmmi-10">ϕ</span>(<span 
+class="cmmi-10">X</span>) : Ω <span 
+class="cmsy-10">→</span>, so its expectation may be calculated
+                            <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">ϕ</span>(<span 
+class="cmmi-10">X</span>)) = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">ω</span><span 
+class="cmsy-7">∈</span><span 
+class="cmr-7">Ω</span> <span 
+class="cmmi-10">ϕ</span>(<span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">ω</span>))<span 
+class="cmmi-10">P</span>(<span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">ω</span><span 
+class="cmsy-10">}</span>)
+                                    = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">ϕ</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)<span 
+class="cmmi-10">P</span>(<span 
+class="cmsy-10">{</span>(<span 
+class="cmmi-10">w</span>) = <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmsy-10">}</span>)
+                                    = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">ϕ</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)<span 
+class="cmmi-10">p</span><span 
+class="cmmi-7">X</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+             [op]thmPropositionFor all constants <span 
+class="cmmi-10">a,c</span>,
+                           <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">c</span>) = 1 =<span 
+class="cmsy-10">⇒ </span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">c</span>                    (1.21)
+                            <span 
+class="cmmi-10">Y </span>= <span 
+class="cmmi-10">aX </span>+ <span 
+class="cmmi-10">c</span> =<span 
+class="cmsy-10">⇒ </span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">Y </span>) = <span 
+class="cmmi-10">aE</span>(<span 
+class="cmmi-10">X</span>) + <span 
+class="cmmi-10">c</span>            (1.22)
+          <span 
+class="cmti-10">Proof.</span> By definition,
+        eq:expect1
+                               <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>) = <span 
+class="cmmi-10">cP</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">c</span>) = <span 
+class="cmmi-10">c</span>
+        eq:expect2
+                                 <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">Y </span>) = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  (<span 
+class="cmmi-10">ax</span><span 
+class="cmmi-7">i</span> + <span 
+class="cmmi-10">b</span>)<span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+                                      = <span 
+class="cmmi-10">a</span><span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span><span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>) + <span 
+class="cmmi-10">b</span><span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+                                      = <span 
+class="cmmi-10">aE</span>(<span 
+class="cmmi-10">X</span>) + <span 
+class="cmmi-10">b</span>                          __
+                                          31
+
+             [op]thmProposition If a random variable <span 
+class="cmmi-10">X </span>has a symmetric probability mass
+          function and <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) exists, then <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) is the central value.
+          <span 
+class="cmti-10">Proof.</span> Suppose the pmf is symmetric about zero, so <span 
+class="cmmi-10">X </span>= <span 
+class="cmsy-10">{</span>0<span 
+class="cmmi-10">,</span><span 
+class="cmsy-10">±</span><span 
+class="cmmi-10">x</span><span 
+class="cmr-7">1</span><span 
+class="cmmi-10">,</span><span 
+class="cmsy-10">±</span><span 
+class="cmmi-10">x</span><span 
+class="cmr-7">2</span><span 
+class="cmmi-10">,</span><span 
+class="cmmi-10">...</span><span 
+class="cmsy-10">}</span>
+          with respective probabilities <span 
+class="cmmi-10">p</span><span 
+class="cmr-7">0</span><span 
+class="cmmi-10">,p</span><span 
+class="cmr-7">1</span><span 
+class="cmmi-10">,</span><span 
+class="cmmi-10">...</span>. Then
+                    <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) = 0<span 
+class="cmmi-10">p</span><span 
+class="cmr-7">0</span> + (<span 
+class="cmmi-10">x</span><span 
+class="cmr-7">1</span><span 
+class="cmmi-10">p</span><span 
+class="cmr-7">1</span> <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">x</span><span 
+class="cmr-7">1</span><span 
+class="cmmi-10">p</span><span 
+class="cmr-7">1</span>) + (<span 
+class="cmmi-10">x</span><span 
+class="cmr-7">2</span><span 
+class="cmmi-10">p</span><span 
+class="cmr-7">2</span> <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">x</span><span 
+class="cmr-7">2</span><span 
+class="cmmi-10">p</span><span 
+class="cmr-7">2</span>) + <span 
+class="cmsy-10">⋅⋅⋅</span> = 0
+             If <span 
+class="cmmi-10">X </span>is symmetric about some other value <span 
+class="cmmi-10">μ</span>, then define <span 
+class="cmmi-10">Y </span>= <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ </span>to get
+          a pmf symmetric about zero, so <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">Y </span>) = 0. Then by eq:expect1,
+                                 <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">Y </span>) + <span 
+class="cmmi-10">μ </span>= <span 
+class="cmmi-10">μ</span>                      __
+          <span 
+class="cmbx-10">1.2.3</span>  <span 
+class="cmbx-10">Variance</span>
+          <span 
+class="cmbx-10">Definition </span>(Variance)<span 
+class="cmbx-10">. </span>When it exists, the <span 
+class="cmmi-10">r</span><span 
+class="cmr-7">th</span> moment of <span 
+class="cmmi-10">X </span>about <span 
+class="cmmi-10">α </span>is
+                                      <span 
+class="cmmi-10">E</span>((<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">α</span>)<span 
+class="cmmi-7">r</span>)
+          <span 
+class="cmbx-10">Definition. </span>For a random variable <span 
+class="cmmi-10">X </span>with mean <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">μ</span>, the variance of <span 
+class="cmmi-10">X</span>
+          is
+                                   (<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">E</span>((<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">α</span>)<span 
+class="cmr-7">2</span>)
+          <span 
+class="cmbx-10">Remark. </span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) is the first moment about zero, and (<span 
+class="cmmi-10">X</span>) is the second moment
+          about <span 
+class="cmmi-10">μ </span>= <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>).
+             [op]thmProposition For a random variable <span 
+class="cmmi-10">X </span>with <span 
+class="cmmi-10">μ </span>= <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>),
+                              (<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span><span 
+class="cmr-7">2</span>) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>                          (1.23)
+                              (<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span>1)) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span>(<span 
+class="cmmi-10">μ </span><span 
+class="cmsy-10">− </span>1)               (1.24)
+          <span 
+class="cmti-10">Proof.</span> Using eq:expect1 gives
+           eq:var1
+                               <span 
+class="cmmi-10">E</span>((<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">α</span>)<span 
+class="cmr-7">2</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span><span 
+class="cmr-7">2</span> <span 
+class="cmsy-10">− </span>2<span 
+class="cmmi-10">μX </span>+ <span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>)
+                                          = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span><span 
+class="cmr-7">2</span>) <span 
+class="cmsy-10">− </span>2<span 
+class="cmmi-10">μE</span>(<span 
+class="cmmi-10">X</span>) + <span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>
+                                          = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span><span 
+class="cmr-7">2</span>) <span 
+class="cmsy-10">− </span>2<span 
+class="cmmi-10">μμ </span>+ <span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>
+                                          = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span><span 
+class="cmr-7">2</span>) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>
+                                          32
+
+           eq:var2
+                          <span 
+class="cmmi-10">E</span>((<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">α</span>)<span 
+class="cmr-7">2</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span><span 
+class="cmr-7">2</span> <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">X </span>+ <span 
+class="cmmi-10">X</span>(1 <span 
+class="cmsy-10">− </span>2<span 
+class="cmmi-10">μ</span>) + <span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>)
+                                     = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span><span 
+class="cmr-7">2</span> <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">X</span>) + (1 <span 
+class="cmsy-10">− </span>2<span 
+class="cmmi-10">μ</span>)<span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) + <span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>
+                                     = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span>1)) + (1 <span 
+class="cmsy-10">− </span>2<span 
+class="cmmi-10">μ</span>)<span 
+class="cmmi-10">μ </span>+ <span 
+class="cmmi-10">μ</span><span 
+class="cmr-7">2</span>
+                                     = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span>1)) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span>(<span 
+class="cmmi-10">μ </span><span 
+class="cmsy-10">− </span>1)              __
+             [op]thmPropositionFor a random variable <span 
+class="cmmi-10">X </span>and all constants <span 
+class="cmmi-10">a,c</span>,
+          Where it exists,                       (<span 
+class="cmmi-10">X</span>) <span 
+class="cmsy-10">≥ </span>0                  (1.25)
+                                         (<span 
+class="cmmi-10">X</span>) = 0 <span 
+class="cmsy-10">⇐⇒ </span><span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">c</span>) = 1      (1.26)
+                                      <span 
+class="cmmi-10">Y </span>= <span 
+class="cmmi-10">aX </span>+ <span 
+class="cmmi-10">c</span> =<span 
+class="cmsy-10">⇒ </span>(<span 
+class="cmmi-10">Y </span>) = <span 
+class="cmmi-10">a</span><span 
+class="cmr-7">2</span>(<span 
+class="cmmi-10">X</span>)       (1.27)
+          <span 
+class="cmti-10">Proof.</span>
+           eq:var3 Variance is a sum of non-negative terms
+                               (<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span>)<span 
+class="cmr-7">2</span> = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  (<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span> <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span>)<span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+           eq:var4 By eq:expect1,
+                                  <span 
+class="cmmi-10">P</span>(<span 
+class="cmmi-10">X </span>= <span 
+class="cmmi-10">c</span>) = 1 =<span 
+class="cmsy-10">⇒ </span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">c</span>
+                  so by the definition of varience,
+                                               =<span 
+class="cmsy-10">⇒ </span>(<span 
+class="cmmi-10">X</span>) = 0
+                  Now suppose <span 
+class="cmmi-10">X </span>is not constant. Then <span 
+class="cmmi-10">X </span>takes at least two values with
+                  non-zero probability. Therefore at least one term in
+                               (<span 
+class="cmmi-10">X</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span>)<span 
+class="cmr-7">2</span> = <span 
+class="cmex-10">∑</span>
+ <span 
+class="cmmi-7">i</span>  (<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span> <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">μ</span>)<span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">x</span><span 
+class="cmmi-7">i</span>)
+                  must not be zero, so (<span 
+class="cmmi-10">X</span>) <span 
+class="cmmi-10">&#x003E; </span>1. Hence in this case, (<span 
+class="cmmi-10">X</span>) <span 
+class="cmsy-10">⁄</span>= 0.
+           eq:var5 By eq:expect2,
+                                 (<span 
+class="cmmi-10">Y </span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">Y </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">Y </span>))<span 
+class="cmr-7">2</span>
+                                     = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">aX </span>+ <span 
+class="cmmi-10">c </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">aE</span>(<span 
+class="cmmi-10">X</span>) <span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">c</span>)<span 
+class="cmr-7">2</span>
+                                     = <span 
+class="cmmi-10">a</span><span 
+class="cmr-7">2</span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>))<span 
+class="cmr-7">2</span>
+                                     = <span 
+class="cmmi-10">a</span><span 
+class="cmr-7">2</span>(<span 
+class="cmmi-10">X</span>)                              __
+          <span 
+class="cmbx-10">Definition </span>(Standard definition)<span 
+class="cmbx-10">. </span>Where it exists, the standard deviation of <span 
+class="cmmi-10">X</span>
+          is
+                                      (<span 
+class="cmmi-10">X</span>) = <span 
+class="cmex-10">∘</span>
+  __(<span 
+class="cmmi-10">X</span>)
+                                          33
+
+          <span 
+class="cmbx-10">Remark. </span>Unlike variance, standard deviation is measured in the same units of
+          <span 
+class="cmmi-10">X</span>, so has a direct interpretation.
+          <span 
+class="cmbx-10">Notation. </span>Expectation, variance and standard deviation may be notated as
+          <span 
+class="cmmi-10">μ,σ</span><span 
+class="cmr-7">2</span><span 
+class="cmmi-10">,σ </span>respectively, or if necessary, <span 
+class="cmmi-10">μ</span><span 
+class="cmmi-7">X</span><span 
+class="cmmi-10">,μ</span><span 
+class="cmmi-7">Y</span> <span 
+class="cmmi-10">,σ</span><span 
+class="cmr-7">2</span><span 
+class="cmmi-7">X</span><span 
+class="cmmi-10">,</span><span 
+class="cmmi-10">...</span>.
+          <span 
+class="cmbx-10">Remark. </span>Expectation may be interpreted as a measure of location, and vari-
+          ence and standard deviation as measures of spread or dispersion.
+          <span 
+class="cmbx-10">Definition </span>(Coefficient of variation)<span 
+class="cmbx-10">. </span>The coefficient of variation of a random
+          variable <span 
+class="cmmi-10">X </span>is the dimensionless ratio
+                                          <span 
+class="cmmi-10">σ</span>
+<span 
+class="cmmi-10">μ</span>
+          <span 
+class="cmbx-10">1.2.4</span>  <span 
+class="cmbx-10">Probability generating function</span>
+          <span 
+class="cmbx-10">Definition </span>(PGF)<span 
+class="cmbx-10">. </span>For a random variable <span 
+class="cmmi-10">X </span>taking values 0<span 
+class="cmmi-10">,</span>1<span 
+class="cmmi-10">,</span>2<span 
+class="cmmi-10">,</span><span 
+class="cmmi-10">...</span>, the prob-
+          ability generation function (pgf) of <span 
+class="cmmi-10">X </span>is the power series
+                               Π<span 
+class="cmmi-7">X</span>(<span 
+class="cmmi-10">z</span>) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">z</span><span 
+class="cmmi-7">X</span>) =  <span 
+class="cmsy-7">∞</span>
+<span 
+class="cmex-10">∑</span> 
+<span 
+class="cmmi-7">k</span><span 
+class="cmr-7">=0</span> <span 
+class="cmmi-10">z</span><span 
+class="cmmi-7">k</span><span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">k</span>)
+          for all values of <span 
+class="cmmi-10">z </span>where the expectation is defined.
+             [op]thmProposition For a random variable <span 
+class="cmmi-10">X </span>with pgf Π(<span 
+class="cmmi-10">z</span>), where the ex-
+          pectations exist, the <span 
+class="cmmi-10">n</span><span 
+class="cmr-7">th</span> factorial moment of <span 
+class="cmmi-10">X </span>is
+                                   Π(1) = 1                             (1.28)
+                                   Π(1) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>)                         (1.29)
+                                   Π(1) = <span 
+class="cmmi-10">E</span>(<span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span>1))                   (1.30)
+                                Π<span 
+class="cmr-7">(</span><span 
+class="cmmi-7">n</span><span 
+class="cmr-7">)</span>(1) = <span 
+class="cmmi-10">E</span> <span 
+class="cmex-10">(</span>
+   <span 
+class="cmmi-10">X</span>! ____
+(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">− </span><span 
+class="cmmi-10">n</span>)!<span 
+class="cmex-10">)</span>
+                                                                       (1.31)
+             pgfexternal@did@a@shipout
+                                          34
+
+
